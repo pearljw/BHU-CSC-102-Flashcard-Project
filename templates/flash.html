@@ -26,4 +26,32 @@
         <h2 style="text-align: center;color: black;">Create Flashcard</h2>
         <label for="Question">Question</label>
         <textarea id="question"></textarea>
-        
+  <br />
+        <label for="Answer">Answer</label>
+        <textarea id="answer"></textarea>
+        <div>
+          <button onclick="addFlashCards()">Save</button>
+          <button onclick="hideCreateBox()">Close</button>
+        </div>
+      </div>
+      <!-- Edit Feature -->
+      <div class="edit-box" style="display:none;">
+        <h2 style="text-align: center;color: black;">Edit Flashcard</h2>
+        <label for="edit-question">Question</label>
+        <textarea id="edit-question"></textarea>
+        <br />
+        <label for="edit-answer">Answer</label>
+        <textarea id="edit-answer"></textarea>
+        <div>
+          <button onclick="saveEdits()">Save</button>
+          <button onclick="hideEditBox()">Close</button>
+        </div>
+      </div>
+
+      <div class="flashcards"></div>
+    </div>
+
+    <button class="btn"><a href="/website/template/templates/index.html">Back to Home page</a></button>
+    </body>
+</html>      
+
